@@ -5,7 +5,7 @@ jobs:
   build-app:
     strategy:
       matrix:
-        distribution: ["temurin"]
+        distribution: ["zulu"]
         os: [ macos-latest, windows-latest ]
 #        os: [ windows-latest ]
     name: Build the application
