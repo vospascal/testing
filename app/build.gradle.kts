@@ -37,9 +37,9 @@ application {
     // Define the main class for the application.
     mainModule.set("dev.vulture.packagefx")
     mainClass.set(appClassName)
-    if (platform.equals("mac")) {
-        applicationDefaultJvmArgs = listOf("-Dsun.java2d.metal=true")
-    }
+//    if (platform.equals("mac")) {
+//        applicationDefaultJvmArgs = listOf("-Dsun.java2d.metal=true")
+//    }
 }
 
 java {
