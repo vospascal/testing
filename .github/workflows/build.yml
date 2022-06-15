@@ -1,11 +1,13 @@
-name: Build installar for supported os
+name: Build installer for supported os
 on: push
 
 jobs:
   build-app:
     strategy:
       matrix:
-        os: [ macos-latest,ubuntu-20.04, windows-latest ]
+        distribution: ["temurin"]
+        os: [ macos-latest, windows-latest ]
+#        os: [ windows-latest ]
     name: Build the application
     runs-on: ${{ matrix.os }}
     steps:
