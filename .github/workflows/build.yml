@@ -5,7 +5,7 @@ jobs:
   build-app:
     strategy:
       matrix:
-        distribution: ['temurin'],
+        distribution: ['temurin']
 #         https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources
         os: [ macos-12, windows-2022 ]
 #        os: [ windows-latest ]
