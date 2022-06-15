@@ -6,7 +6,8 @@ jobs:
     strategy:
       matrix:
         distribution: ["zulu"]
-        os: [ macos-latest, windows-latest ]
+#         https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources
+        os: [ macos-12, windows-2022 ]
 #        os: [ windows-latest ]
     name: Build the application
     runs-on: ${{ matrix.os }}
