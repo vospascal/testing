@@ -78,7 +78,7 @@ tasks {
                             "--type", "msi", //type installer // {"app-image", "exe", "msi", "rpm", "deb", "pkg", "dmg"}
                             "--vendor", "PedalBox",
                             "--install-dir", "PedalBox",
-                            "--icon", "src/main/resources/icon.ico",
+                            "--icon", "src/main/resources/org/example/assets/pedal.ico",
                             "--win-menu-group", "PedalBox",
                             "--win-dir-chooser",
                             "--win-shortcut"
