@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="calibrate" prefHeight="820.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.calibrate.CalibrateController">
+    <children>
+        <fx:include fx:id="calibrateClutch" source="CalibrateClutch.fxml"/>
+        <fx:include fx:id="calibrateBrake" source="CalibrateBrake.fxml" AnchorPane.topAnchor="220"/>
+        <fx:include fx:id="calibrateThrottle" source="CalibrateThrottle.fxml" AnchorPane.topAnchor="440"/>
+        <Button fx:id="saveCalibrationButton" layoutX="233.0" layoutY="665.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" text="save calibration" />
+        <Button fx:id="resetCalibrationButton" layoutX="425.0" layoutY="665.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" text="reset calibration" />
+    </children>
+</AnchorPane>

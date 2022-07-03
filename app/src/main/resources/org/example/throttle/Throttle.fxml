@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="throttle" minWidth="290.0" prefHeight="470.0" prefWidth="290.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.throttle.ThrottleController">
+    <children>
+        <Label fx:id="ThrottleLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="-72.0" layoutY="97.0" prefHeight="20.0" prefWidth="200.0" rotate="-90.0" text="Throttle" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <LineChart fx:id="throttleChart" layoutY="255.0" prefHeight="225.0" prefWidth="250.0" stylesheets="@../styles/style.css">
+            <xAxis>
+                <NumberAxis side="BOTTOM" fx:id="xAxis" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yAxis" layoutX="100.0" side="LEFT" />
+            </yAxis>
+        </LineChart>
+        <Label layoutX="60.0" layoutY="16.0" text="0%" />
+        <Label layoutX="52.0" layoutY="45.0" text="20%" />
+        <Label layoutX="52.0" layoutY="74.0" text="40%" />
+        <Label layoutX="52.0" layoutY="103.0" text="60%" />
+        <Label layoutX="53.0" layoutY="132.0" text="80%" />
+        <Label layoutX="47.0" layoutY="161.0" text="100%" />
+        <TextField fx:id="input_0" layoutX="88.0" layoutY="12.0" />
+        <TextField fx:id="input_20" layoutX="88.0" layoutY="41.0" />
+        <TextField fx:id="input_40" layoutX="88.0" layoutY="70.0" />
+        <TextField fx:id="input_60" layoutX="88.0" layoutY="99.0" />
+        <TextField fx:id="input_80" layoutX="88.0" layoutY="128.0" />
+        <TextField fx:id="input_100" layoutX="88.0" layoutY="157.0" />
+        <Group autoSizeChildren="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="12.0">
+            <VBox alignment="BOTTOM_CENTER" prefHeight="450.0" prefWidth="15.0">
+                <ProgressBar fx:id="throttleProgressBar" minHeight="-Infinity" minWidth="422.0" prefHeight="15.0" prefWidth="400.0" progress="0.5" rotate="-90.0" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="200.0" />
+            </VBox>
+        </Group>
+        <ComboBox  fx:id="curves" accessibleHelp="curves" accessibleText="curves" layoutX="88.0" layoutY="186.0" prefHeight="25.0" prefWidth="149.0">
+        </ComboBox>
+        <CheckBox fx:id="smooth" layoutX="88" layoutY="220.0" mnemonicParsing="false" text="smooth input" />
+        <CheckBox fx:id="inverted" layoutX="88" layoutY="245.0" mnemonicParsing="false" text="inverted input" />
+    </children>
+</AnchorPane>
