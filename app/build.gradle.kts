@@ -71,7 +71,7 @@ tasks {
         if (platform == "win") {
             args(
                     listOf(
-                            "--name", "fxBuildDemo",
+                            "--name", "PedalBox",
                             "--module-path", "$buildDir/modules" + File.pathSeparator + "$buildDir/libs",
                             "--dest", "$buildDir/installer",
                             "--module", "${appModuleName}/${appClassName}",
@@ -86,7 +86,7 @@ tasks {
             )
         } else {
             args(listOf(
-                    "-n", "fxBuildDemo",
+                    "-n", "PedalBox",
                     "-p", "$buildDir/modules" + File.pathSeparator + "$buildDir/libs",
                     "-d", "$buildDir/installer",
                     "-m", "${appModuleName}/${appClassName}"))
