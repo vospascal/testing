@@ -71,22 +71,22 @@ tasks {
         if (platform == "win") {
             args(
                     listOf(
-                            "--name", "PedalBox",
+                            "--name", "Simforge PedalFx",
                             "--module-path", "$buildDir/modules" + File.pathSeparator + "$buildDir/libs",
                             "--dest", "$buildDir/installer",
                             "--module", "${appModuleName}/${appClassName}",
                             "--type", "msi", //type installer // {"app-image", "exe", "msi", "rpm", "deb", "pkg", "dmg"}
-                            "--vendor", "PedalBox",
-                            "--install-dir", "PedalBox",
+                            "--vendor", "Simforge PedalFx",
+                            "--install-dir", "Simforge PedalFx",
                             "--icon", "src/main/resources/org/example/assets/pedal.ico",
-                            "--win-menu-group", "PedalBox",
+                            "--win-menu-group", "Simforge PedalFx",
                             "--win-dir-chooser",
                             "--win-shortcut"
                     )
             )
         } else {
             args(listOf(
-                    "-n", "PedalBox",
+                    "-n", "Simforge PedalFx",
                     "-p", "$buildDir/modules" + File.pathSeparator + "$buildDir/libs",
                     "-d", "$buildDir/installer",
                     "-m", "${appModuleName}/${appClassName}"))
