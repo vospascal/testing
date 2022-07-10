@@ -31,7 +31,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class PrimaryController {
-    String deviceName = "Simforge PedalFx";
+    String deviceName = "PedalBox";
 
     public SerialPort comPort;
 
